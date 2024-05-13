@@ -69,21 +69,47 @@ const valoracion = (puntos) => {
 };
 //Ejercicio 8
 
-function cuentaRegresiva() {
+const cuentaRegresiva = () => {
   let resultado = "";
   for (let i = 59; i >= 0; i--) {
     resultado += i + "\n";
   }
   return resultado;
-}
+};
 
 //Ejercicio 9
 
-function deDosenDos() {
-    let resultado = "";
-    for (let i = 0; i <= 100; i +=2) {
-      resultado += i + "\n";
-    }
-    return resultado;
+const deDosenDos = () => {
+  let resultado = "";
+  for (let i = 0; i <= 100; i += 2) {
+    resultado += i + "\n";
   }
-console.log(deDosenDos())
+  return resultado;
+};
+
+//Ejercicio 10
+
+const cuentaRegresivaDelCien = () => {
+  let resultado = "";
+  for (let i = 100; i >= 0; i--) {
+    resultado += i + "\n";
+  }
+  return resultado;
+};
+//Ejercicio 11
+
+const cuentaNumeros = (numero) => {
+  let array = [];
+
+  if (numero !== -1 && typeof numero === "number") {
+    array.push(numero);
+  } else {
+    for (let i = 0; i < array.length; i++) {
+      return `Numero:${numero[i]} posicion:${i} `;
+    }
+    return [array];
+  }
+  return array;
+};
+
+console.log(cuentaNumeros(2));
