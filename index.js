@@ -130,8 +130,31 @@ const promedioNuevo = () => {
     suma = suma + numeros[i];
   }
   let promedioTotal = suma / numeros.length;
-  return  document.write(` el promedio de los numeros ingresados es${promedioTotal}`);
+  return document.write(
+    ` el promedio de los numeros ingresados es${promedioTotal}`
+  );
 };
 
 //Ejercicio 13
+const ingresarProductos = () => {
+  let productos = [];
+  for (let i = 0; i < 5; i++) {
+    let nombre = prompt("ingrese su producto");
+    let precio = parseFloat(prompt(`ingrese el precio de ${nombre}`));
+    productos.push({ nombre, precio });
+  }
+
+
+  productos.forEach(producto => {
+    document.write(`Nombre:${producto.nombre} Precio:${producto.precio}<br>`)
+  })
+};
+//Ejercico 14
+// const alturas =()=>{
+
+// let personas = parseInt(prompt("ingrese cantidad de personas"))
+
+// console.log(personas)
+// }
+// alturas()
 
