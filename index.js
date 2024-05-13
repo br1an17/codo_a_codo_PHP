@@ -98,18 +98,40 @@ const cuentaRegresivaDelCien = () => {
 };
 //Ejercicio 11
 
-const cuentaNumeros = (numero) => {
-  let array = [];
-
-  if (numero !== -1 && typeof numero === "number") {
-    array.push(numero);
-  } else {
-    for (let i = 0; i < array.length; i++) {
-      return `Numero:${numero[i]} posicion:${i} `;
+const CuentaNumeros = () => {
+  let numeros = [];
+  while (true) {
+    let entrada = prompt("Ingrese un número (o -1 para terminar):");
+    if (entrada === "-1") {
+      for (let i = 0; i < numeros.length; i++) {
+        document.write(`Número: ${numeros[i]} - Posición: ${i}<br>`);
+      }
+      break;
     }
-    return [array];
+
+    let numero = parseFloat(entrada);
+    numeros.push(numero);
   }
-  return array;
+};
+//Ejercicio 12
+
+const promedioNuevo = () => {
+  let numeros = [];
+  while (true) {
+    let entrada = prompt("Ingrese un número (o -1 para terminar):");
+    if (entrada === "-1") {
+      break;
+    }
+    let numero = parseFloat(entrada);
+    numeros.push(numero);
+  }
+  let suma = 0;
+  for (let i = 0; i < numeros.length; i++) {
+    suma = suma + numeros[i];
+  }
+  let promedioTotal = suma / numeros.length;
+  return  document.write(` el promedio de los numeros ingresados es${promedioTotal}`);
 };
 
-console.log(cuentaNumeros(2));
+//Ejercicio 13
+
