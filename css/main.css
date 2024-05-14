@@ -117,9 +117,9 @@
   transition: all 0.5s ease;
 }
 .pelicula:hover {
-    box-shadow: 0 0 30px var(--color_hover); /* Agrega el efecto de brillo al hacer hover */
-    transform: scale(0.9); /* Reducir ligeramente el tamaño al hacer hover */
-  }
+  box-shadow: 0 0 30px var(--color_hover); /* Agrega el efecto de brillo al hacer hover */
+  transform: scale(0.9); /* Reducir ligeramente el tamaño al hacer hover */
+}
 
 .imgTendencia {
   width: 100%;
@@ -163,21 +163,14 @@
   opacity: 1;
 }
 
-
-
-.peliculasAclamadas {
+.peliculasVistas{
   width: 80%;
   margin: 0 auto;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 60px;
 }
-.tituloSection {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-.aclamadas {
+.vistas {
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
@@ -220,30 +213,27 @@
     font-size: 1rem;
   }
 
-.buscadorPrincipal {
-  height: 30vh;
-}
-.tituloSection {
-  font-size: 1.6rem;
-}
-.buscadorPeliculas {
+  .buscadorPrincipal {
+    height: 30vh;
+  }
+  .tituloSection {
+    font-size: 1.6rem;
+  }
   .inputBuscador {
     font-size: 1rem;
     height: 40px;
     width: 300px;
   }
+
   .botonBuscador {
     height: 40px;
     padding: 0 15px;
     font-size: 1rem;
   }
-}
+
 
 .peliculasTendencia {
   width: 95%;
-}
-.tituloSection {
-  font-size: 2rem;
 }
 .peliculas {
   flex-direction: column;
@@ -267,20 +257,15 @@
   padding: 0.8rem 0.8rem;
   font-size: 0.8rem;
 }
-.peliculasAclamadas {
-  .tituloSection {
-    font-size: 2rem;
-  }
-  .aclamadas {
-    .peliculaItem {
-      width: 150px;
-      min-width: 150px;
-      font-size: 15px;
-      margin-left: 20px;
-      .imgAclamada {
-        width: 90%;
-        height: 90%;
-      }
-    }
-  }
-}}
+
+.peliculaItem {
+  width: 150px;
+  min-width: 150px;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.imgAclamada {
+  width: 90%;
+  height: 90%;
+}
+}
