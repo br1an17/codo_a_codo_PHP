@@ -144,17 +144,119 @@ const ingresarProductos = () => {
     productos.push({ nombre, precio });
   }
 
-
-  productos.forEach(producto => {
-    document.write(`Nombre:${producto.nombre} Precio:${producto.precio}<br>`)
-  })
+  productos.forEach((producto) => {
+    document.write(`Nombre:${producto.nombre} Precio:${producto.precio}<br>`);
+  });
 };
-//Ejercico 14
-// const alturas =()=>{
+//Ejercicio 14
+const alturas = () => {
+  let personas = [];
+  let suma = 0;
+  let cantidad = parseInt(prompt("ingrese cantidad de personas"));
 
-// let personas = parseInt(prompt("ingrese cantidad de personas"))
+  for (let i = 0; i < cantidad; i++) {
+    let altura = parseFloat(prompt("ingrese alturas"));
+    personas.push(altura);
+  }
 
-// console.log(personas)
-// }
-// alturas()
+  for (let i = 0; i < cantidad; i++) {
+    suma = suma + personas[i];
+  }
+  document.write(suma / cantidad);
+};
+//Ejercicio 15
 
+const bingo = () => {
+  let num = parseInt(prompt("ingrese un numero del 0 al 25"));
+
+  switch (num) {
+    case 0:
+      resultado = "El agua";
+      break;
+    case 1:
+      resultado = "El gallo";
+      break;
+    case 2:
+      resultado = "Los pies";
+      break;
+    case 3:
+      resultado = "La luna";
+      break;
+    case 4:
+      resultado = "La muerte";
+      break;
+    case 5:
+      resultado = "El niño";
+      break;
+    case 6:
+      resultado = "La lombriz";
+      break;
+    case 7:
+      resultado = "La mujer";
+      break;
+    case 8:
+      resultado = "El mundo";
+      break;
+    case 9:
+      resultado = "El payaso";
+      break;
+    case 10:
+      resultado = "La cama";
+      break;
+    case 11:
+      resultado = "Los dulces";
+      break;
+    case 12:
+      resultado = "Los ratones";
+      break;
+    case 13:
+      resultado = "El diablo";
+      break;
+    case 14:
+      resultado = "El borracho";
+      break;
+    case 15:
+      resultado = "La calavera";
+      break;
+    case 16:
+      resultado = "Los garbanzos";
+      break;
+    case 17:
+      resultado = "El sol";
+      break;
+    case 18:
+      resultado = "El perico";
+      break;
+    case 19:
+      resultado = "El venado";
+      break;
+    case 20:
+      resultado = "El soldado";
+      break;
+    case 21:
+      resultado = "El gorrito";
+      break;
+    case 22:
+      resultado = "Los huevos";
+      break;
+    case 23:
+      resultado = "La jaula";
+      break;
+    case 24:
+      resultado = "El borracho dormido";
+      break;
+    case 25:
+      resultado = "El sombrero";
+      break;
+    default:
+      resultado = "ingrese un numero del 0 al 25";
+  }
+
+  document.write(
+    (resultado === "ingrese un numero del 0 al 25"
+      ? resultado
+      : `el significado del numero ${num} es : ${resultado}`)
+  );
+};
+
+//Ejercicio 16
