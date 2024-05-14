@@ -5,6 +5,11 @@
     background-size: cover;
 background-position: center;
 } */
+
+:root{
+--color_hover:#6590dc
+
+}
 *{
     margin: 0;
     padding: 0;
@@ -30,12 +35,12 @@ background-position: center;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #9f3647;
+    background: var(--color_base);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background:#9f3647;
+    background:var(--color_hover);
 }
 body{
     background-color: #181419;
