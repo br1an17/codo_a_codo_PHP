@@ -29,12 +29,10 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 1.2rem;
-  /*animacion hover*/
-  &:hover {
-    animation: tilt-n-move-shaking 0.25s infinite;
-  }
 }
-
+.anclaLogo:hover {
+  animation: tilt-n-move-shaking 0.25s infinite;
+}
 .listaNav {
   list-style: none;
   display: flex;
@@ -51,26 +49,14 @@
   padding: 0.5rem 1rem;
   /* Agregar efecto de botón presionado */
   transition: transform 0.3s, box-shadow 0.3s;
-  &:hover {
-    transform: scale(0.95);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-  }
 }
-.linkNav.iniciarSesion {
-  background-color: #181419;
-  color: white;
-
+.linkNav:hover {
+  background-color: var(--color_hover);
+  transform: scale(0.95);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  /* Agregar efecto de botón presionado */
-  transition: transform 0.3s, box-shadow 0.3s;}
-
-  
-  linkNav.iniciarSesion :hover {
-    background-color: #9f3647;
-    /* transform: scale(0.95);
-                         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);*/
-  }
+box-shadow: 0 0 10px rgba(255, 255, 255, 0.667);
+}
 
 
 /*ESTILOS PARA HEADER MOBILE Y TABLET*/

@@ -1,0 +1,61 @@
+/*ESTILOS ESCRITORIO FOOTER*/
+ footer {
+  padding: 20px;
+  background-color: var(--color_base);
+  color: #ffffff;
+  height: 18vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navegacion2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listaNav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.listaItem {
+  margin-left: 20px;
+}
+.linkNav {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.administradorPeliculas {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.aportes,
+.video {
+  font-size: 14px;
+}
+/*ESTILOS FOOTER CELULAR Y TABLET CHICA*/
+@media (max-width: 768px) {
+  .footer {
+    height: initial;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .listaNav {
+    flex-direction: column;
+
+    row-gap: 15px;
+  }
+
+  .listaItem .linkNav {
+    font-size: 1rem;
+  }
+  .administradorPeliculas {
+    padding: 0.5rem 0.8rem;
+  }
+}
