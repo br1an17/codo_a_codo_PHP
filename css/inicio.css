@@ -1,0 +1,83 @@
+:root {
+  --color_hover: #6590dc;
+  --color_borde: #021638;
+  --color_base: #3d39b9e5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-image: url(/imagenes/cinema-background-concept-vector.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
+
+.inicio {
+  background-color: var(--color_base);
+  width: 30%;
+  margin: 2rem auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  font-size: 1.2rem;
+}
+
+.tituloInicio {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: 700px;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 100%;
+  padding: 40px;
+}
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  padding: 0px 20px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: 2px solid var(--color_borde);
+  background-color: #333333;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
+.boton {
+  width: 87%;
+  box-sizing: content-box;
+  background-color: var(--color_borde);
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 3vh;
+}
+.registro {
+  margin-top: 1rem;
+  font-size: 3vh;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.boton:hover {
+  background-color: var(--color_hover);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.667);
+}
+.registro:hover {
+  font-size: 2rem;
+  transform: scale(12);
+  text-shadow: 10px 10px 20px black;
+}
