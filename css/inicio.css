@@ -16,7 +16,6 @@ body {
   color: white;
   background-image: url(/imagenes/cinema-background-concept-vector.jpg);
   background-size: cover;
-  /* background-repeat: no-repeat; */
 }
 
 .inicio {
@@ -56,6 +55,10 @@ input {
   outline: none;
   color: rgb(255, 255, 255);
 }
+.contenedorBoton {
+    display: flex;
+    justify-content: center;
+  }
 .boton {
   width: 87%;
   box-sizing: content-box;
@@ -80,4 +83,53 @@ input {
   font-size: 2rem;
   transform: scale(12);
   text-shadow: 10px 10px 20px black;
+}
+@media (max-width: 1400px) {
+    body{
+        background-image: url(/imagenes/cinema-background-concept-vector.jpg);
+        height: 100%;
+        width: 100%;
+        color: white;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+    }
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+  }
+  .anclaLogo {
+    font-size: 1rem;
+  }
+  .inicio{
+    width: 70%;
+    padding: 10px 10px;
+  }
+  .tituloinicio {
+    font-size: 2rem;
+  }
+  form {
+    width: 100%;
+    text-align: center;
+  }
+
+  input {
+    width: 80%;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .boton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    font-size: 0.8rem;
+  }
+  .registro {
+    text-align: left;
+    font-size: 0.8rem;
+  }
 }
