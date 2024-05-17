@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/inicio.css">
     <title>Document</title>
 </head>
+
 <body>
-    <header>
-<a href="/index.html">
-    <i>
-        <span>cinemaBP</span>
-    </i>
-</a>
+    <header class="header">
+        <nav class="navegacion">
+
+            <a class="anclaLogo" href="/index.html">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>CinemaBP</span>
+            </a>
+
+        </nav>
     </header>
     <main>
-        <form action="" method="get">
-            <label for="">hola
-                <input type="text">
-            </label>
-            <label for="">hola
-                <input type="text">
-            </label>
-            <label for="">hola
-                <input type="text">
-            </label>
-            <label for="">hola
-                <input type="text">
-            </label>
-            <label for="">hola
-                <input type="text">
-            </label>
-            <label for="">hola
-                <input type="text">
-            </label>
-            <button>
-                <a href="/registro.html">registrate</a>
-            </button>
-        </form>
+        <section class="inicio">
+
+            <form action="" method="get">
+                <h2 class="tituloInicio">Registrate</h2>
+                <div>
+                    <input type="text" placeholder="nombre">
+                </div>
+                <div>
+                    <input type="text" placeholder="apellido">
+                </div>
+                <div>
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div>
+                    <input type="date" placeholder="Fecha de nacimiento">
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+                <div class="terminos">
+                    <input class="Check" type="checkbox" name="" id="formu">
+                    <label class="textoCheck" for="formu">aceptas los <a href="">
+                        terminos y condiciones
+                    </a></label>
+                </div>
+                <div class="contenedorBoton">
+                    <input class="boton2" type="submit" value="guardar">
+                </div>
+
+            </form>
+        </section>
     </main>
 </body>
+
 </html>

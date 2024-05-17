@@ -1,7 +1,7 @@
 :root {
   --color_hover: #6590dc;
   --color_borde: #021638;
-  --color_base: #3d39b9e5;
+  --color_base: #3d39b9e6;
 }
 * {
   margin: 0;
@@ -19,7 +19,7 @@ body {
 }
 
 .inicio {
-  background-color: var(--color_base);
+  position: relative;
   width: 30%;
   margin: 2rem auto;
   border-radius: 5px;
@@ -29,20 +29,39 @@ body {
   align-items: center;
   height: 70vh;
   font-size: 1.2rem;
+  overflow: hidden; /* Asegura que el contenido no se salga del borde del div */
+}
+
+.inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/imagenes/rocky.jpg");
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  z-index: -1; /* Coloca la imagen detrás del contenido */
 }
 
 .tituloInicio {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
-  font-weight: 700px;
+  font-weight: 700;
   margin-bottom: 30px;
+  color:var(--color_hover)/* Asegura que el texto sea visible sobre el fondo */
 }
 
 form {
   width: 100%;
   padding: 40px;
+  position: relative; /* Asegura que el contenido del formulario se mantenga en el contexto adecuado */
+  z-index: 1; /* Asegura que el formulario esté encima de la imagen de fondo */
 }
+
 input {
   width: 100%;
   margin-bottom: 10px;
@@ -56,9 +75,9 @@ input {
   color: rgb(255, 255, 255);
 }
 .contenedorBoton {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+}
 .boton {
   width: 87%;
   box-sizing: content-box;
@@ -67,7 +86,17 @@ input {
   border-radius: 10px;
   font-size: 3vh;
 }
+.boton2 {
+  display: flex;
+  width: 57%;
+  background-color: var(--color_borde);
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 2vh;
+  justify-content: center;
+}
 .registro {
+  margin-left: 1vh;
   margin-top: 1rem;
   font-size: 3vh;
   text-decoration: none;
@@ -79,22 +108,57 @@ input {
   background-color: var(--color_hover);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.667);
 }
+.boton2:hover {
+  background-color: var(--color_hover);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.667);
+}
 .registro:hover {
   font-size: 2rem;
   transform: scale(12);
   text-shadow: 10px 10px 20px black;
 }
+
+.terminos {
+  display: flex;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.Check {
+  width: 16px; 
+  height: 16px; 
+  margin-right: 8px;
+  accent-color: var(--color_base)
+}
+
+.textoCheck {
+  color: var(--color_hover);
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.textoCheck a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.textoCheck a:hover {
+  text-decoration: underline;
+  color: var(--color_hover);
+}
+
 @media (max-width: 1400px) {
-    body{
-        background-image: url(/imagenes/cinema-background-concept-vector.jpg);
-        height: 100%;
-        width: 100%;
-        color: white;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-attachment: fixed;
-    }
-  .header{
+  body {
+    background-image: url(/imagenes/cinema-background-concept-vector.jpg);
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,8 +168,8 @@ input {
   .anclaLogo {
     font-size: 1rem;
   }
-  .inicio{
-    width: 70%;
+  .inicio {
+    width: 80%;
     padding: 10px 10px;
   }
   .tituloinicio {
