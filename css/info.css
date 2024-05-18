@@ -1,0 +1,42 @@
+.detalle {
+  padding-top: 50px;
+  background: linear-gradient(to right top, #6d6969a7, #6d6969a7),
+    url("/imagenes/rocky.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+.contenedorDetalle {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+}
+img {
+  border-radius: 20px;
+}
+.textoDetalle h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.textoDetalle h2 {
+  margin-top: 20px;
+}
+.contenedorCreditos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trailer {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 70px;
+}
