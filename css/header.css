@@ -5,8 +5,6 @@
 .header {
   background-color: var(--color_base);
   color: #ffffff;
-  /* height: 10vh;
-  position: sticky; */
   top: 0;
   z-index: 10;
 }
