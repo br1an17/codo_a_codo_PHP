@@ -2,15 +2,37 @@ let envio = document.getElementById("envio");
 
 
 
-envio.addEventListener("submit", (event) => {
+
+const validarInicio = () => {
     let mail = document.getElementById("text");
     let password = document.getElementById("password");
 
-    if (mail.value === "" && password.value === "") {
-        event.preventDefault();     
-        return alert("completar ambos campos");
-      } else if (mail.value === "" || password.value === "") {
-          event.preventDefault();
-        return alert("completar campo faltante");
-      } else return alert("inicio de sesion exitosa");
-});
+    let isValid = true;
+
+    if (mail.value === "") {
+       mail.placeholder = "Completar campo";
+       mail.classList.add('error-placeholder');
+       isValid = false;
+    } else {
+       mail.placeholder = "E-mail";
+       mail.classList.remove('error-placeholder');
+    }
+
+    if (password.value === "") {
+       password.placeholder = "Completar campo";
+       password.classList.add('error-placeholder');
+       isValid = false;
+    } else {
+       password.placeholder = "Contraseña";
+       password.classList.remove('error-placeholder');
+    }
+
+    if (isValid) {
+       alert("Inicio de sesión exitoso");
+    }
+ };
+
+ envio.addEventListener('submit', (event) => {
+    event.preventDefault();
+    validarInicio();
+ });

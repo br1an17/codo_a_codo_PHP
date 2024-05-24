@@ -147,6 +147,13 @@ input {
   text-decoration: underline;
   color: var(--color_hover);
 }
+input::placeholder {
+  color: #999;
+}
+
+input.error-placeholder::placeholder {
+  color: red;
+}
 
 @media (max-width: 1400px) {
   body {
