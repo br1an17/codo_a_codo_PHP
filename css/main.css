@@ -51,7 +51,7 @@
 .tituloSection {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 2%;
 }
 .buscadorPeliculas {
   display: flex;
@@ -118,7 +118,7 @@
 }
 .pelicula:hover {
   box-shadow: 0 0 30px var(--color_hover);
-  transform: scale(0.9); 
+  transform: scale(0.9);
 }
 
 .imgTendencia {
@@ -163,20 +163,20 @@
   opacity: 1;
 }
 
-.peliculasVistas{
+.peliculasVistas {
   width: 80%;
   margin: 0 auto;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 60px;
 }
-.prueva{
+.prueva {
   width: 70%;
   height: 450px;
-  display:flex ;
+  display: flex;
   gap: 10px;
 }
-.prueva img{
+.prueva img {
   width: 10%;
   height: 100%;
   object-fit: cover;
@@ -184,14 +184,12 @@
   border: 2px solid white;
   transition: all ease-in-out 0.5s;
 }
-.prueva img:hover{
- width: 25%;
- box-shadow: 0 0 30px var(--color_hover);
- transform: scale(1.2); 
+.prueva img:hover {
+  width: 25%;
+  box-shadow: 0 0 30px var(--color_hover);
+  transform: scale(1.1 );
+  margin-top: 1rem;
 }
-
-
-
 
 @media (max-width: 768px) {
   .sectionPrincipal {
@@ -226,41 +224,40 @@
     font-size: 1rem;
   }
 
+  .peliculasTendencia {
+    width: 95%;
+  }
+  .peliculas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.peliculasTendencia {
-  width: 95%;
-}
-.peliculas {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .peliculas a {
+    width: 100%;
+  }
+  .pelicula {
+    width: 100%;
+    height: 500px;
+  }
 
-.peliculas a {
-  width: 100%;
-}
-.pelicula {
-  width: 100%;
-  height: 500px;
-}
+  .tituloPelicula h4 {
+    font-size: 1rem;
+  }
 
-.tituloPelicula h4 {
-  font-size: 1rem;
-}
+  .boton {
+    padding: 0.8rem 0.8rem;
+    font-size: 0.8rem;
+  }
 
-.boton {
-  padding: 0.8rem 0.8rem;
-  font-size: 0.8rem;
-}
-
-.peliculaItem {
-  width: 150px;
-  min-width: 150px;
-  font-size: 15px;
-  margin-left: 20px;
-}
-.imgVista {
-  width: 90%;
-  height: 90%;
-}
+  .peliculaItem {
+    width: 150px;
+    min-width: 150px;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+  .imgVista {
+    width: 90%;
+    height: 90%;
+  }
 }
