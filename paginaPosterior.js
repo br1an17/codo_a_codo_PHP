@@ -1,7 +1,7 @@
 const btnPost = document.getElementById("btnPost");
 const btnAnt = document.getElementById("btnAnt");
 let suma = 0;
-
+const url = `https://api.themoviedb.org/3/movie/popular`;
 const options = {
   method: "GET",
   headers: {
@@ -11,14 +11,14 @@ const options = {
 };
 
 const actualizarPelis = () => {
-  const url = `https://api.themoviedb.org/3/movie/popular?page=${suma}`;
-  console.log(suma);
+  const pagina = `${url}?page=${suma}`;
   
-  fetch(url, options)
-    .then((res) => res.json())
-    .then((json) => {
-      const moviesContainer = document.getElementById("pelis");
-      moviesContainer.innerHTML = "";
+  fetch(pagina, options)
+  .then((res) => res.json())
+  .then((json) => {
+    const moviesContainer = document.getElementById("pelis");
+    moviesContainer.innerHTML = "";
+    console.log(json.results);
       json.results.forEach((movie) => {
         const movieContent = `
         <div class="peliculas">
