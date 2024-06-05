@@ -2,7 +2,7 @@
 .sectionPrincipal {
   color: rgb(255, 255, 255);
   background: linear-gradient(to right top, #0000008a, #0000008a),
-    url(/imagenes/plataformas_1600x900.jpg);
+    url(imagenes/plataformas_1600x900.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
