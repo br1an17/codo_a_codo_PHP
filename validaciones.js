@@ -1,8 +1,6 @@
 let envio = document.getElementById("envio");
 
 
-
-
 const validarInicio = () => {
     let mail = document.getElementById("text");
     let password = document.getElementById("password");
@@ -36,3 +34,4 @@ const validarInicio = () => {
     event.preventDefault();
     validarInicio();
  });
+

@@ -24,31 +24,31 @@
     <main>
         <section class="inicio">
 
-            <form action="" method="get">
-                <h2 class="tituloInicio">Registrate</h2>
+            <form method="get" id="for">
+                <h2 class="tituloInicio" id="titulo">Registrate</h2>
                 <div>
-                    <input type="text" placeholder="nombre">
+                    <input type="text" placeholder="nombre" id="nombre">
                 </div>
                 <div>
-                    <input type="text" placeholder="apellido">
+                    <input type="text" placeholder="apellido" id="apellido">
                 </div>
                 <div>
-                    <input type="email" placeholder="E-mail">
+                    <input type="email" placeholder="E-mail" id="email">
                 </div>
                 <div>
-                    <input type="date" placeholder="Fecha de nacimiento">
+                    <input type="date" placeholder="Fecha de nacimiento" id="nacimiento">
                 </div>
                 <div>
-                    <input type="password" placeholder="Repetir contraseña">
+                    <input type="password" placeholder="Repetir contraseña" id="contra">
                 </div>
                 <div>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" placeholder="Contraseña" id="contraseña">
                 </div>
                 <div class="terminos">
                     <input class="Check" type="checkbox" name="" id="formu">
                     <label class="textoCheck" for="formu">aceptas los <a href="">
-                        terminos y condiciones
-                    </a></label>
+                            terminos y condiciones
+                        </a></label>
                 </div>
                 <div class="contenedorBoton">
                     <input class="boton2" type="submit" value="guardar">
@@ -56,7 +56,9 @@
 
             </form>
         </section>
-    </main>
+        </main>
+    <script src="/validacionRegistro.js"></script>
+
 </body>
 
 </html>
