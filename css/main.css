@@ -192,7 +192,7 @@
   margin-top: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .sectionPrincipal {
     height: 60vh;
   }
@@ -209,6 +209,7 @@
 
   .buscadorPrincipal {
     height: 30vh;
+    margin: auto;
   }
   .tituloSection {
     font-size: 1.6rem;
@@ -216,7 +217,9 @@
   .inputBuscador {
     font-size: 1rem;
     height: 40px;
-    width: 300px;
+    width: 20vh;
+    margin: auto;
+
   }
 
   .botonBuscador {
@@ -260,5 +263,31 @@
   .imgVista {
     width: 90%;
     height: 90%;
+  }
+  .peliculasVistas {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .prueva {
+    width: 65%;
+    display: flex;
+    height: 250px;
+    gap: 8px;
+  }
+  .prueva img {
+    width: 8%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: all ease-in-out 0.5s;
+  }
+  .prueva img:hover {
+    width: 25%;
+    box-shadow: 0 0 30px var(--color_hover);
+    transform: scale(1.1 );
+    margin-top: 1rem;
   }
 }
