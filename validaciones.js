@@ -1,9 +1,9 @@
 let envio = document.getElementById("envio");
+const mail = document.getElementById("text");
+const password = document.getElementById("password");
 
 
 const validarInicio = () => {
-    let mail = document.getElementById("text");
-    let password = document.getElementById("password");
 
     let isValid = true;
 
@@ -27,6 +27,8 @@ const validarInicio = () => {
 
     if (isValid) {
        alert("Inicio de sesión exitoso");
+       password.value = "";
+       mail.value = "";
     }
  };
 

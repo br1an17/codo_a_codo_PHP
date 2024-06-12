@@ -23,18 +23,24 @@
     </header>
     <main>
         <section class="inicio">
-
-            <form method="get" id="for">
+            
+            <form method="post" id="for">
                 <h2 class="tituloInicio" id="titulo">Registrate</h2>
                 <div>
                     <input type="text" placeholder="nombre" id="nombre">
-                </div>
-                <div>
-                    <input type="text" placeholder="apellido" id="apellido">
-                </div>
-                <div>
-                    <input type="email" placeholder="E-mail" id="email">
-                </div>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="apellido" id="apellido">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="E-mail" id="email">
+                            </div>
+                                <div class="terminos" >
+                                    <input id="terminos" class="Check" type="checkbox" name="" id="formu">
+                                    <label class="textoCheck" for="formu">aceptas los <a href="">
+                                            terminos y condiciones
+                                        </a></label>
+                                </div>
                 <div>
                     <input type="date" placeholder="Fecha de nacimiento" id="nacimiento">
                 </div>
@@ -43,12 +49,6 @@
                     </div>
                     <div>
                     <input type="password" placeholder="Repetir contraseña" id="contra">
-                </div>
-                <div class="terminos">
-                    <input class="Check" type="checkbox" name="" id="formu">
-                    <label class="textoCheck" for="formu">aceptas los <a href="">
-                            terminos y condiciones
-                        </a></label>
                 </div>
                 <div class="contenedorBoton">
                     <input class="boton2" type="submit" value="guardar">
