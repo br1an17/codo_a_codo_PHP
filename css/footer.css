@@ -45,6 +45,7 @@
     height: initial;
     padding-top: 15px;
     padding-bottom: 20px;
+    height: 0;
   }
   .listaNav {
     flex-direction: column;
