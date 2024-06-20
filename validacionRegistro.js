@@ -6,10 +6,13 @@ const validarFormulario = () => {
   let apellido = document.getElementById("apellido");
   let email = document.getElementById("email");
   let nacimiento = document.getElementById("nacimiento");
+  let nacimientoError = document.getElementById('nacimientoError');
   let contraseña = document.getElementById("contraseña");
   let contra = document.getElementById("contra");
    
   let isValid = true;
+  console.log(nacimiento)
+  nacimientoError.textContent = ''
 
   if (email.value === "") {
     email.placeholder = "Completar campo";
@@ -19,13 +22,10 @@ const validarFormulario = () => {
     email.placeholder = "E-mail";
     email.classList.remove("error-placeholder");
   }
-  if (nacimiento.value === "") {
-    nacimiento.placeholder = "Completar campo";
-    nacimiento.classList.add("error-placeholder");
-    isValid = false;
-  } else {
-    nacimiento.placeholder = "E-mail";
-    nacimiento.classList.remove("error-placeholder");
+  if (nacimiento.value==="") {
+   
+    nacimientoError.textContent = "Por favor, ingrese su fecha de nacimiento.";
+  nacimiento.style.marginBottom ="2px"
   }
 
   if (nombre.value === "") {
@@ -66,6 +66,7 @@ const validarFormulario = () => {
 
   }
 };
+
 
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
