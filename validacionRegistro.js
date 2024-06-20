@@ -1,6 +1,7 @@
 let formulario = document.getElementById("for");
 let terminos = document.getElementById("terminos")
-   console.log(terminos)
+let terminosError = document.getElementById("terminosError")
+
 const validarFormulario = () => {
   let nombre = document.getElementById("nombre");
   let apellido = document.getElementById("apellido");
@@ -11,8 +12,9 @@ const validarFormulario = () => {
   let contra = document.getElementById("contra");
    
   let isValid = true;
-  console.log(nacimiento)
+
   nacimientoError.textContent = ''
+  terminosError.textContent = '';
 
   if (email.value === "") {
     email.placeholder = "Completar campo";
@@ -59,6 +61,12 @@ const validarFormulario = () => {
   } else {
     contra.placeholder = "Contraseña";
     contra.classList.remove("error-placeholder");
+  }
+
+  if(!terminos.checked){
+    terminosError.textContent="debe aceptar los terminos"
+
+
   }
 
   if (isValid) {
