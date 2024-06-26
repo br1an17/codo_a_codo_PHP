@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaBP</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="header">
+        <nav class="navegacion">
+
+            <a class="anclaLogo" href="index.html">
+                <i class="fas fa-film" aria-hidden="true"></i>
+                <span>CinemaBP</span>
+            </a>
+
+        </nav>
+    </header>
+    <main>
+        <section class="inicio">
+
+            <form method="post" id="for">
+                <h2 class="tituloInicio" id="titulo">Crear Pelicula</h2>
+                <div>
+                    <input type="text" placeholder="nombre" id="nombre">
+                </div>
+                <div class="input">
+
+                    <label for="genres">Selecciona géneros de películas:</label>
+                    <select id="genero" name="genero">
+                        <option value="accion">Acción</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="comedia">Comedia</option>
+                        <option value="drama">Drama</option>
+                        <option value="fantasia">Fantasía</option>
+                        <option value="horror">Horror</option>
+                        <option value="misterio">Misterio</option>
+                        <option value="romance">Romance</option>
+                        <option value="sci-fi">Ciencia Ficción</option>
+                        <option value="thriller">Thriller</option>
+                </select>
+                    </div>
+                <div>
+                    <input type="select" placeholder="director" id="nacimiento"><br>
+                    <span id="generoError" style="color:red;"></span>
+                </div>
+                <div class="contenedorBoton">
+                    <input class="boton2" type="submit" value="crear">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
