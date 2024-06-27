@@ -74,6 +74,18 @@ input{
   outline: none;
   color: rgb(255, 255, 255);
 }
+.inputSelect{
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  padding: 0px 20px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: 2px solid var(--color_borde);
+  background-color: #333333;
+  outline: none;
+  color: rgb(255, 255, 255);
+}
 
 .contenedorBoton {
   display: flex;
