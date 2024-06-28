@@ -77,7 +77,7 @@ input{
 .inputSelect{
   width: 100%;
   margin-bottom: 10px;
-  height: 40px;
+  height: 35px;
   padding: 0px 20px;
   font-size: 1.2rem;
   border-radius: 20px;
@@ -85,6 +85,13 @@ input{
   background-color: #333333;
   outline: none;
   color: rgb(255, 255, 255);
+}
+
+.inputSelect >option{
+color: red;
+border: #ffffff 5px solid;
+
+
 }
 
 .contenedorBoton {
